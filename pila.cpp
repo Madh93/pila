@@ -21,7 +21,10 @@
 
 
 	template <class T>
-	bool Pila<T>::empty(){}	
+	bool Pila<T>::empty(){
+
+		return top_ == -1;
+	}	
 
 
 	template <class T>
