@@ -81,4 +81,6 @@
 	template <class T>
 	void Pila<T>::imprimir(){
 
+		for (int i=0; i<=top_; i++)
+			cout << pila_[i] << ", ";
 	}		
