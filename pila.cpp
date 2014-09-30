@@ -84,3 +84,24 @@
 		for (int i=0; i<=top_; i++)
 			cout << pila_[i] << ", ";
 	}		
+
+int main(void){
+	
+	Pila<int> PilaInt(10);
+	Pila<float> PilaFloat(10);
+	Pila<char> PilaChar(10);
+
+	for (int i=0; i<5; i++){
+
+		PilaInt.push(i*2);
+		PilaFloat.push(i*2.3);
+		PilaChar.push('a'+i);
+	}
+
+	cout << "Mostrar pila: "; PilaInt.imprimir(); cout << endl;
+	cout << "Mostrar pila: "; PilaFloat.imprimir(); cout << endl;
+	cout << "Mostrar pila: "; PilaChar.imprimir(); cout << endl;
+
+
+	return 0;
+}	
