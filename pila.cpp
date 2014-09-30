@@ -11,7 +11,13 @@
 
 
 	template <class T>
-	Pila<T>::~Pila(){}	
+	Pila<T>::~Pila(){
+
+		if (pila_){
+			delete pila_;
+			pila_ = NULL;
+		}
+	}	
 
 
 	template <class T>
