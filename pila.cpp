@@ -37,7 +37,7 @@
 	template <class T>
 	void Pila<T>::push(T dato){
 
-		if (!full){
+		if (!full()){
 			top_++;
 			pila_[top_] = dato;
 		}
@@ -50,7 +50,19 @@
 
 
 	template <class T>
-	T Pila<T>::pop(){}	
+	T Pila<T>::pop(){
+
+		if (!empty()){
+			T dato = pila_[top_];
+			top_--;
+			return dato;
+		}
+
+		else{
+			cout << "Pila vacia!" << endl;
+			exit(1);		
+		}		
+	}	
 
 
 	template <class T>
