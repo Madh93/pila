@@ -69,7 +69,7 @@
 	T Pila<T>::top(){
 
 		if (!empty())
-			return stack_[top_];
+			return pila_[top_];
 
 		else{
 			cout << "Pila vacia!" << endl;
@@ -79,4 +79,6 @@
 
 
 	template <class T>
-	void Pila<T>::imprimir(){}		
+	void Pila<T>::imprimir(){
+
+	}		
