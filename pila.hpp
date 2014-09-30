@@ -4,5 +4,8 @@ using namespace std;
 
 class Pila {
 
+	public:
 
+		Pila();
+		~Pila();
 };
