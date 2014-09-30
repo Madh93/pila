@@ -28,7 +28,10 @@
 
 
 	template <class T>
-	bool Pila<T>::full(){}	
+	bool Pila<T>::full(){
+
+		return top_ >= size_-1;
+	}	
 
 
 	template <class T>
