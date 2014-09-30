@@ -66,7 +66,16 @@
 
 
 	template <class T>
-	T Pila<T>::top(){}		
+	T Pila<T>::top(){
+
+		if (!empty())
+			return stack_[top_];
+
+		else{
+			cout << "Pila vacia!" << endl;
+			exit(1);		
+		}			
+	}		
 
 
 	template <class T>
