@@ -35,7 +35,18 @@
 
 
 	template <class T>
-	void Pila<T>::push(T dato){}	
+	void Pila<T>::push(T dato){
+
+		if (!full){
+			top_++;
+			pila_[top_] = dato;
+		}
+
+		else{
+			cout << "Pila llena!" << endl;
+			exit(1);	
+		}
+	}	
 
 
 	template <class T>
