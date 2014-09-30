@@ -13,7 +13,7 @@ class Pila {
 
 	public:
 
-		Pila();
+		Pila(int sz);
 		~Pila();
 
 		bool empty();
