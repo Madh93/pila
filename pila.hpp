@@ -16,5 +16,12 @@ class Pila {
 		Pila();
 		~Pila();
 
+		bool empty();
+		bool full();
 
+		void push(T dato);
+		T pop();
+		T top();
+
+		void imprimir();
 };
