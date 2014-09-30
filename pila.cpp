@@ -1,7 +1,13 @@
 #include "pila.hpp"
 
 	template <class T>
-	Pila<T>::Pila(int sz){}
+	Pila<T>::Pila(int sz):
+
+		size_(sz),
+		top_(-1),
+		pila_(NULL){
+			pila_ = new T [size_];
+		}
 
 
 	template <class T>
